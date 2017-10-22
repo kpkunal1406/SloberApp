@@ -43,4 +43,26 @@ public class UserServiceImpl implements UserService {
 		return userIntegrationService.createUserIntegration(userReqVO);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.slober.web.user.service.UserService#updateUser(com.slober.util.model.
+	 * req.UserReqVO)
+	 */
+	@Override
+	public UserRespVO updateUser(UserReqVO userReqVO) throws Exception {
+		return userIntegrationService.updateUserIntegration(userReqVO);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.slober.web.user.service.UserService#getUser(java.lang.String)
+	 */
+	@Override
+	public UserRespVO getUser(String userName) throws Exception {
+		return userIntegrationService.getUserIntegration(userName);
+	}
+
 }

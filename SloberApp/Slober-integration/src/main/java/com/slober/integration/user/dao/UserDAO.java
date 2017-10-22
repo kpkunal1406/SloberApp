@@ -17,4 +17,8 @@ public interface UserDAO {
 	public SlbUser authenticateUser(String userName, String password) throws Exception;
 
 	public SlbUser createUser(SlbUser slbUser) throws Exception;
+
+	public SlbUser updateUser(SlbUser slbUser) throws Exception;
+
+	public SlbUser getUser(String userName) throws Exception;
 }

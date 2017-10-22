@@ -14,4 +14,11 @@ public interface UserIntegrationService {
 	public UserRespVO authenticateUserIntegration(UserReqVO userReqVO) throws Exception;
 
 	public UserRespVO createUserIntegration(UserReqVO userReqVO) throws Exception;
+
+	public UserRespVO updateUserIntegration(UserReqVO userReqVO) throws Exception;
+	
+	public UserRespVO getUserIntegration(String userName) throws Exception;
+	
+
+
 }

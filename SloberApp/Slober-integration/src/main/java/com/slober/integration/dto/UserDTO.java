@@ -28,6 +28,7 @@ public class UserDTO {
 			userRespVO.setEmail(slbUser.getEmail());
 			userRespVO.setFirstName(slbUser.getFirstname());
 			userRespVO.setLastName(slbUser.getLastname());
+			userRespVO.setProfileImage(slbUser.getProfileImage());
 		}
 		return userRespVO;
 	}
@@ -45,7 +46,33 @@ public class UserDTO {
 			slbUser.setLastname(userReqVO.getLastName());
 			slbUser.setUsername(userReqVO.getUserName());
 			slbUser.setPassword(userReqVO.getPassword());
+			slbUser.setProfileImage(userReqVO.getProfileImage());
 		}
+		return slbUser;
+	}
+
+	public SlbUser setUpdatedValues(SlbUser slbUser, UserReqVO userReqVO) {
+		if (userReqVO != null) {
+			if (userReqVO.getEmail() != null) {
+				slbUser.setEmail(userReqVO.getEmail());
+			}
+			if (userReqVO.getFirstName() != null) {
+				slbUser.setFirstname(userReqVO.getFirstName());
+			}
+			if (userReqVO.getLastName() != null) {
+				slbUser.setLastname(userReqVO.getLastName());
+			}
+			if (userReqVO.getPassword() != null) {
+				slbUser.setPassword(userReqVO.getPassword());
+			}
+			if (userReqVO.getUserName() != null) {
+				slbUser.setUsername(userReqVO.getUserName());
+			}
+			if (userReqVO.getProfileImage() != null) {
+				slbUser.setProfileImage(userReqVO.getProfileImage());
+			}
+		}
+
 		return slbUser;
 	}
 }

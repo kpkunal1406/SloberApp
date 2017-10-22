@@ -54,4 +54,27 @@ public class UserDAOImpl implements UserDAO {
 
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.slober.integration.user.dao.UserDAO#updateUser(com.slober.integration
+	 * .entity.SlbUser)
+	 */
+	@Override
+	public SlbUser updateUser(SlbUser slbUser) throws Exception {
+		return hibernateUtil.update(slbUser);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.slober.integration.user.dao.UserDAO#getUser(java.lang.String)
+	 */
+	@Override
+	public SlbUser getUser(String userName) throws Exception {
+		String query = "SELECT s FROM SlbUser s WHERE s.username = '" + userName + "'";
+		return hibernateUtil.fetch(query, SlbUser.class);
+	}
+
 }

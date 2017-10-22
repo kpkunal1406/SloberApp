@@ -9,13 +9,14 @@ import com.slober.util.SuperVO;
  * @author Kunal
  *
  */
-public class UserReqVO extends SuperVO{
+public class UserReqVO extends SuperVO {
 
 	private String userName;
 	private String password;
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String profileImage;
 
 	/**
 	 * @return the userName
@@ -90,6 +91,21 @@ public class UserReqVO extends SuperVO{
 	 */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	/**
+	 * @return the profileImage
+	 */
+	public String getProfileImage() {
+		return profileImage;
+	}
+
+	/**
+	 * @param profileImage
+	 *            the profileImage to set
+	 */
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
 	}
 
 }

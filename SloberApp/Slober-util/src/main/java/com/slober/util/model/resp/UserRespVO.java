@@ -17,6 +17,7 @@ public class UserRespVO extends SuperVO {
 	private String email;
 	private String firstName;
 	private String lastName;
+	private String profileImage;
 
 	/**
 	 * @return the email
@@ -106,6 +107,21 @@ public class UserRespVO extends SuperVO {
 	 */
 	public void setProfileName(String profileName) {
 		this.profileName = profileName;
+	}
+
+	/**
+	 * @return the profileImage
+	 */
+	public String getProfileImage() {
+		return profileImage;
+	}
+
+	/**
+	 * @param profileImage
+	 *            the profileImage to set
+	 */
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
 	}
 
 }

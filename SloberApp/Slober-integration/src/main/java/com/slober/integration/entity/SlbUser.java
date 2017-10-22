@@ -27,6 +27,8 @@ public class SlbUser implements Serializable {
 	private String password;
 	@Column
 	private String username;
+	@Column
+	private String profileImage;
 
 	public SlbUser() {
 	}
@@ -77,6 +79,14 @@ public class SlbUser implements Serializable {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	public String getProfileImage() {
+		return profileImage;
+	}
+
+	public void setProfileImage(String profileImage) {
+		this.profileImage = profileImage;
 	}
 
 }

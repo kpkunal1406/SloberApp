@@ -14,4 +14,8 @@ public interface UserService {
 	public UserRespVO authenticateUser(UserReqVO userReqVO) throws Exception;
 
 	public UserRespVO createUser(UserReqVO userReqVO) throws Exception;
+
+	public UserRespVO updateUser(UserReqVO userReqVO) throws Exception;
+	
+	public UserRespVO getUser(String userName) throws Exception;
 }

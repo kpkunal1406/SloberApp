@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.slober.web.user.controller;
 
 import org.springframework.stereotype.Component;

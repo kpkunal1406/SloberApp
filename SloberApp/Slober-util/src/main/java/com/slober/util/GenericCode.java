@@ -16,5 +16,5 @@ public class GenericCode {
 	public static final Integer ERROR = 1;
 
 	public static final Integer AUTHENTICATION_FAILED = 11;
-
+	public static final Integer PROFILE_IMG_UPLOAD_FAILED = 12;
 }
